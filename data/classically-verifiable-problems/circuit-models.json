@@ -8,8 +8,8 @@
         "gates": 4020
       },
       {
-        "id": "peaked_circuit_P9_Hqap_1917",
-        "path": "peaked_circuit_P9_Hqap_1917.qasm",
+        "id": "peaked_circuit_P9_Hqap_1917_49x5807",
+        "path": "peaked_circuit_P9_Hqap_1917_49x5807.qasm",
         "qubits": 49,
         "gates": 5807
       }
