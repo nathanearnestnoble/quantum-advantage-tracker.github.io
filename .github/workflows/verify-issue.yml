@@ -134,8 +134,10 @@ jobs:
           body: 'Closes #${{ github.event.issue.number }}.'
           branch: submission-issue-${{ github.event.issue.number }}
 
-      - name: Enable pull request auto-merge
-        if: steps.create_pull_request.outputs.pull-request-operation == 'created'
-        run: gh pr merge --merge --auto "${{ steps.create_pull_request.outputs.pull-request-number }}"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # Disabled because of:
+      # https://docs.github.com/en/actions/how-tos/write-workflows/choose-when-workflows-run/trigger-a-workflow#triggering-a-workflow-from-a-workflow
+      # - name: Enable pull request auto-merge
+      #   if: steps.create_pull_request.outputs.pull-request-operation == 'created'
+      #   run: gh pr merge --merge --auto "${{ steps.create_pull_request.outputs.pull-request-number }}"
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
