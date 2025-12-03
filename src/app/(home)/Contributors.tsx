@@ -6,9 +6,9 @@ import RikenLogo from './logo_riken.png';
 
 const contributors = [
   { name: 'Algorithmiq', logo: AlgorithmiqLogo },
-  { name: 'Bluequbit', logo: BluequbitLogo },
-  { name: 'Ibm', logo: IbmLogo },
-  { name: 'Riken', logo: RikenLogo },
+  { name: 'BlueQubit', logo: BluequbitLogo },
+  { name: 'IBM', logo: IbmLogo },
+  { name: 'RIKEN', logo: RikenLogo },
 ];
 
 export function Contributors() {
@@ -19,6 +19,7 @@ export function Contributors() {
           <Image
             src={contributor.logo}
             alt={`${contributor.name} logo`}
+            title={contributor.name}
             className="h-16 w-auto grayscale"
           />
         </li>
