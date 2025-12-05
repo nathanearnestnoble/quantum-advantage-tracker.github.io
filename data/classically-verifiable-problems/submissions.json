@@ -33,5 +33,17 @@
     "institutions": "IBM",
     "runtimeClassical": 38,
     "computeResourcesClassical": "Nvidia H100 GPU"
+  },
+  {
+    "createdAt": "2025-12-04T05:24:47Z",
+    "url": "https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/83",
+    "name": "Quantum Solution for peaked_circuit_p9_hqap_56x1917",
+    "circuit": "peaked_circuit_P9_Hqap_56x1917",
+    "value": "100%",
+    "method": "Quantinuum H2",
+    "authors": "Hayk Tepanyan",
+    "institutions": "BlueQubit\nUniversity of Toronto\nVector Institute for Artificial Intelligence",
+    "runtimeQuantum": 7200,
+    "computeResourcesQuantum": "Quantinuum H2"
   }
 ]
