@@ -25,11 +25,14 @@ const numericFields = [
 for (const key of numericFields) {
   if (!(key in data)) continue;
 
-  const parsedNumber = Number(data[key]);
+  const originalValue = data[key];
+  const parsedNumber = Number(originalValue);
   if (isNaN(parsedNumber)) {
     delete data[key];
   } else {
-    data[key] = parsedNumber;
+    data[key] = originalValue.toLowerCase().includes('e')
+      ? 'EXPONENTIAL_MARKER_' + parsedNumber.toExponential()
+      : parsedNumber;
   }
 }
 
@@ -37,6 +40,6 @@ const output = JSON.stringify({
   createdAt: process.env.ISSUE_CREATED_AT,
   url: process.env.ISSUE_URL,
   ...data,
-});
+}).replace(/"EXPONENTIAL_MARKER_(.*?)"/g, '$1');
 
 console.log(output);
