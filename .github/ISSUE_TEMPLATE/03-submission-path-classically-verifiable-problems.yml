@@ -1,6 +1,8 @@
 name: 🗝️ Path 3 - Classically verifiable problems submission
 description: Submit a problem solution for the classically verifiable problems tracker - When quantum outputs are hard to find but easy to check
 labels: ['path: classically-verifiable-problems', 'submission']
+assignees:
+  - d-kremer
 body:
   - type: markdown
     attributes:

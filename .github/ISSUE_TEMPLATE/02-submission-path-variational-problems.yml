@@ -1,6 +1,8 @@
 name: 🌀 Path 2 - Variational problems submission
 description: Submit a problem solution to the variational problems tracker - Certifiable quantum solutions via the variational principle
 labels: ['path: variational-problems', 'submission']
+assignees:
+  - jrm874
 body:
   - type: markdown
     attributes:

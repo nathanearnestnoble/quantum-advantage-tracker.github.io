@@ -1,6 +1,8 @@
 name: 📊 Path 1 - Observable estimations submission
 description: Submit a problem solution to the observable estimations tracker - Trust through rigorous error control
 labels: ['path: observable-estimations', 'submission']
+assignees:
+  - minhctran
 body:
   - type: markdown
     attributes:
