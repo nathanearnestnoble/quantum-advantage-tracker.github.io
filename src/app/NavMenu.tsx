@@ -17,7 +17,7 @@ export function NavMenu() {
           variant="ghost"
           className={clsx(
             pathname.startsWith('/trackers') &&
-              'text-nav-menu-selected-foreground hover:text-nav-menu-selected-foreground hover:bg-inherit',
+              'text-green-600 hover:bg-inherit hover:text-green-600',
           )}
         >
           <Link href="/trackers">Advantage trackers</Link>
@@ -28,8 +28,7 @@ export function NavMenu() {
           asChild
           variant="ghost"
           className={clsx(
-            pathname === '/participate' &&
-              'text-nav-menu-selected-foreground hover:text-nav-menu-selected-foreground hover:bg-inherit',
+            pathname === '/participate' && 'text-green-600 hover:bg-inherit hover:text-green-600',
           )}
         >
           <Link href="/participate">Participate</Link>
