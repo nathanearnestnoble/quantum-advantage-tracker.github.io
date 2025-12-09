@@ -9,7 +9,7 @@
     "energy": -62.25668182839704,
     "errorBoundHigh": -57.52492815,
     "method": "SKQD",
-    "institutions": "IBM, ORNL, UMD",
+    "institutions": "IBM, ORNL, University of Maryland",
     "runtimeQuantum": 3600,
     "runtimeClassical": 345600,
     "computeResourcesQuantum": "IBM Heron r2",
