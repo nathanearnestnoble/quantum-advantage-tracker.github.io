@@ -54,8 +54,22 @@
     "value": "100%",
     "method": "TNS + BP on GPUs (extrapolated)",
     "institutions": "BlueQubit, University of Toronto, Vector Institute",
-    "runtimeClassical": 1e+14,
+    "runtimeClassical": 1E+14,
     "computeResourcesClassical": "cluster of NVIDIA H100 GPUs",
     "notes": "Classical runtime is extrapolated."
+  },
+  {
+    "createdAt": "2025-12-19T19:28:14Z",
+    "url": "https://github.com/quantum-advantage-tracker/quantum-advantage-tracker.github.io/issues/93",
+    "name": "Quantum runtime for peaked circuit 40q x 5072 CZ's on heavy-hex",
+    "circuit": "peaked_circuit_heavy_hex_49x5072",
+    "value": "100",
+    "method": "Quantum",
+    "authors": "Petar Jurcevic",
+    "institutions": "IBM Quantum",
+    "runtimeQuantum": 697,
+    "runtimeClassical": 0,
+    "computeResourcesQuantum": "ibm_boston Heron R3 + custom calibrations",
+    "computeResourcesClassical": "N/A"
   }
 ]
