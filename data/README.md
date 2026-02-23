@@ -49,7 +49,7 @@ To submit a new circuit model, follow these steps:
 
     Look for the `options` list under the `circuit` dropdown and append your new instance IDs.
 
-7.  **Create a pull request**: Commit your changes and open a pull request (PR) to the repository.
+7.  **Create a pull request**: Commit your changes and open a pull request.
     - Include a clear description of the new model and any relevant context.
     - Ensure all checks pass.
 
@@ -96,7 +96,46 @@ To submit a new circuit instance to an existing circuit model, follow these step
 
 To submit a new hamiltonian, follow these steps:
 
-TODO
+1.  **Identify the path**: Determine which of the paths your hamiltonian belongs to:
+    - `variational-problems`
+
+2.  **Create a hamiltonian directory**: Navigate to the `hamiltonians` subdirectory within the chosen path folder. Create a new directory for your hamiltonian.
+    - Example: `data/variational-problems/hamiltonians/my_new_hamiltonian/`
+
+3.  **Create hamiltonian documentation**: Create a `README.md` file inside your hamiltonian directory.
+    - This file should describe the problem or experiment, provide any relevant mathematical background, and list the institutions involved.
+    - You can use `data/variational-problems/hamiltonians/anderson_impurity_model/README.md` as a template.
+
+4.  **Add hamiltonian files**: Place your hamiltonian files (e.g., `.qasm` files) inside the directory you just created.
+
+5.  **Update `hamiltonians.json`**: Open the `hamiltonians.json` file located in the path root (e.g., `data/variational-problems/hamiltonians.json`). Add an entry for your new hamiltonian.
+    - The key should match your hamiltonian directory name.
+    - The `instances` array should list each hamiltonian instance with its `id`, `path` (relative to the hamiltonian directory), and other metadata like `hilbert_space_size`.
+
+    **Example `hamiltonians.json` entry:**
+
+    ```json
+    {
+      "my_new_hamiltonian": {
+        "instances": [
+          {
+            "id": "my_new_hamiltonian_instance_1",
+            "path": "instance_1.qasm",
+            "hilbert_space_size": 8.86e15
+          }
+        ]
+      }
+    }
+    ```
+
+6.  **Update issue templates**: Add the new hamiltonian instance IDs to the relevant issue template in `.github/ISSUE_TEMPLATE/`. This ensures that users can select the new instances when submitting results.
+    - For `variational-problems`, update `02-submission-path-variational-problems.yml`.
+
+    Look for the `options` list under the `hamiltonian` dropdown and append your new instance IDs.
+
+7.  **Create a pull request**: Commit your changes and open a pull request.
+    - Include a clear description of the new hamiltonian and any relevant context.
+    - Ensure all checks pass.
 
 # How to submit a new hamiltonian instance?
 
