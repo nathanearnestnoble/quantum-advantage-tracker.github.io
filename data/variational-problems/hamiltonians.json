@@ -20,7 +20,7 @@
   "guided_sparse_ground_state_problem": {
     "instances": [
       {
-        "id": "49Q_v1",
+        "id": "guided_sparse_ground_state_problem_49Q_v1",
         "path": "49Q_v1",
         "hilbert_space_size": 5.62e14
       }
